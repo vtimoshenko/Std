@@ -5,6 +5,7 @@ package com.rzd.pktb.tvs.Console;
  */
 public class Main {
     public static void main (String[] args){
-        System.out.println("Hello world");
+        ConsoleDialog dial = new ConsoleDialog();
+        dial.run();
     }
 }
