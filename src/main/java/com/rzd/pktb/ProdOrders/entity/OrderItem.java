@@ -14,6 +14,10 @@ public class OrderItem {
         this.price = price;
     }
 
+    public String getInfo(){
+        return "\r\n\t" + count + " of #" + productId + " price:" + price;
+    }
+
     public int getProductId() {
         return productId;
     }

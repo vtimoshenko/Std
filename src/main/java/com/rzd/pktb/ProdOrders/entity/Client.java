@@ -12,6 +12,10 @@ public class Client {
         this.FIO = FIO;
     }
 
+    public String getInfo(){
+        return "\r\nClient " + FIO + " (id=" + id + ")";
+    }
+
     public int getId() {
         return id;
     }

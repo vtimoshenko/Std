@@ -14,6 +14,10 @@ public class Product {
         this.vendorCode = vendorCode;
     }
 
+    public String getInfo(){
+        return "\r\n#" + id + "(" + vendorCode + ") (price>" + supplyPrice + ")";
+    }
+
     public int getId() {
         return id;
     }

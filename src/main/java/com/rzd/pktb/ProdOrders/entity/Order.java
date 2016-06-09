@@ -1,6 +1,7 @@
 package com.rzd.pktb.ProdOrders.entity;
 
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -24,6 +25,17 @@ public class Order {
         this.id = id;
         this.managerId = managerId;
         this.date = date;
+        items = new LinkedList<OrderItem>();
+    }
+
+    public String getInfo(){
+        StringBuffer buf = new StringBuffer();
+        buf.append("\r\nOrder №" + id + " by manager #" + managerId + " (" + date.toString() + ")");
+        for (OrderItem item : items)
+        {
+            buf.append(item.getInfo() );
+        }
+        return buf.toString();
     }
 
     public int getId() {

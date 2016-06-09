@@ -12,6 +12,10 @@ public class Manager {
         this.FIO = FIO;
     }
 
+    public String getInfo(){
+        return "\r\nManager " + FIO + " (id=" + id + ")";
+    }
+
     public String getFIO() {
         return FIO;
     }
